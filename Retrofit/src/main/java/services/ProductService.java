@@ -21,5 +21,4 @@ public interface ProductService {
 
     @DELETE("products/{id}")
     Call <Product> deleteProduct(@Path("id") Integer id);
-
 }
