@@ -17,7 +17,7 @@ public class PreparingProduct extends BaseTest{
     protected Integer id;
 
     @BeforeEach
-    void setUp() throws IOException {
+    void createProduct() throws IOException {
         product = new Product()
                 .withTitle(faker.food().spice())
                 .withPrice((int) (Math.random() + 1) * 100)
