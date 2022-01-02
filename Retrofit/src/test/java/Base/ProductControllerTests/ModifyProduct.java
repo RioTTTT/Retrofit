@@ -12,7 +12,7 @@ public class ModifyProduct extends PreparingProduct {
     @DisplayName("изменение названия продукта")
     @Test
     @SneakyThrows
-    void chanceProduct() {
+    void changeProduct() {
         Response<Product> response = productService
                 .updateProduct(product.withId(id)
                         .withTitle(faker.food().spice()))
