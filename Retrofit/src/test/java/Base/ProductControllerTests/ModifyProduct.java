@@ -1,6 +1,6 @@
 package Base.ProductControllerTests;
 
-import Base.CreateProduct;
+import Base.PreparingProduct;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,7 +8,7 @@ import product.Product;
 import retrofit2.Response;
 import utils.PrettyLogin;
 
-public class ModifyProduct extends CreateProduct {
+public class ModifyProduct extends PreparingProduct {
     @DisplayName("изменение названия продукта")
     @Test
     @SneakyThrows

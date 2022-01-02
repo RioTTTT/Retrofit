@@ -1,6 +1,6 @@
 package Base.ProductControllerTests;
 
-import Base.CreateProduct;
+import Base.PreparingProduct;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,7 +8,7 @@ import product.Product;
 import retrofit2.Response;
 import utils.PrettyLogin;
 
-public class GetProductById extends CreateProduct {
+public class GetProductById extends PreparingProduct {
     @DisplayName("Получение продука по id")
     @Test
     @SneakyThrows

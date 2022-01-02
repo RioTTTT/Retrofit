@@ -2,6 +2,7 @@ package Base;
 
 import com.github.javafaker.Faker;
 import enums.CategoryType;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import product.Product;
 import retrofit2.Response;
@@ -9,7 +10,7 @@ import utils.PrettyLogin;
 
 import java.io.IOException;
 
-public class CreateProduct extends BaseTest{
+public class PreparingProduct extends BaseTest{
 
     protected Faker faker = new Faker();
     protected Product product;
@@ -38,6 +39,13 @@ public class CreateProduct extends BaseTest{
         softAssertions.assertThat(response.body().getCategoryTitle())
                 .isEqualTo(product.getCategoryTitle());
         softAssertions.assertAll();
+
+    }
+
+
+    @AfterEach
+    void deleteProduct() {
+        softAssertions.assertThat(productService.deleteProduct(id)).isEqualTo(200);
 
     }
 }
