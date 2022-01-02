@@ -13,6 +13,7 @@ public class BaseTest {
     protected static CategoryService categoryService;
     protected static SoftAssertions softAssertions;
 
+
     @BeforeAll
     static void beforeAll() {
 

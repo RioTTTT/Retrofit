@@ -42,7 +42,6 @@ public class PreparingProduct extends BaseTest{
 
     }
 
-
     @AfterEach
     void deleteProduct() {
         softAssertions.assertThat(productService.deleteProduct(id)).isEqualTo(200);

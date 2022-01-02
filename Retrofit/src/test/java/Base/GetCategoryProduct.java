@@ -13,6 +13,7 @@ import utils.PrettyLogin;
 public class GetCategoryProduct extends BaseTest{
     Integer id;
 
+
     @DisplayName("Получение категории продукта по id")
     @Test
     @SneakyThrows
