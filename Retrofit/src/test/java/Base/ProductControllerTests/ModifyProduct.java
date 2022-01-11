@@ -8,6 +8,8 @@ import product.Product;
 import retrofit2.Response;
 import utils.PrettyLogin;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+
 
 public class ModifyProduct extends PreparingProduct {
     @DisplayName("изменение названия продукта")
@@ -23,5 +25,6 @@ public class ModifyProduct extends PreparingProduct {
 
         softAssertions.assertThat(response.headers())
                 .isEqualTo(200);
+        assertThat("Updated", response.isSuccessful());
     }
 }

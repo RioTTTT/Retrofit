@@ -1,6 +1,7 @@
-package Base;
+package Base.CategoryControllerTests;
 
 
+import Base.BaseTest;
 import enums.CategoryType;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +11,7 @@ import retrofit2.Response;
 import utils.PrettyLogin;
 
 
-public class GetCategoryProduct extends BaseTest{
+public class GetCategoryProduct extends BaseTest {
     Integer id;
 
 
