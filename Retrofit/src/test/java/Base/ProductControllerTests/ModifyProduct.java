@@ -10,7 +10,6 @@ import utils.PrettyLogin;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-
 public class ModifyProduct extends PreparingProduct {
     @DisplayName("изменение названия продукта")
     @Test

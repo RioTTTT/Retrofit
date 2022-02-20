@@ -9,7 +9,6 @@ import retrofit2.Response;
 
 import java.util.ArrayList;
 
-
 public class GetAllProducts extends PreparingProduct {
     @DisplayName("Получение списка продуктов")
     @SneakyThrows

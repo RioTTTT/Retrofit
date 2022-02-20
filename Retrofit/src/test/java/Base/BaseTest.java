@@ -1,6 +1,6 @@
 package Base;
 
-import ru.batis.db.dao.ProductsMapper;
+import db.dao.ProductsMapper;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeAll;
 import retrofit2.Retrofit;

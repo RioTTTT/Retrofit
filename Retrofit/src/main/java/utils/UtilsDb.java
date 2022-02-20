@@ -1,10 +1,10 @@
 package utils;
 
-import ru.batis.db.dao.CategoriesMapper;
-import ru.batis.db.dao.ProductsMapper;
-import ru.batis.db.model.Categories;
-import ru.batis.db.model.CategoriesExample;
-import ru.batis.db.model.ProductsExample;
+import db.dao.CategoriesMapper;
+import db.dao.ProductsMapper;
+import db.model.Categories;
+import db.model.CategoriesExample;
+import db.model.ProductsExample;
 import com.github.javafaker.Faker;
 import lombok.SneakyThrows;
 import lombok.experimental.UtilityClass;

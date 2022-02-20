@@ -8,7 +8,6 @@ import product.Product;
 import retrofit2.Response;
 import utils.PrettyLogin;
 
-
 public class GetProductById extends PreparingProduct {
     @DisplayName("Получение продука по id")
     @Test
